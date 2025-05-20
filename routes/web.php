@@ -24,6 +24,7 @@ Route::post('/internships',[InternshipController::class, 'store'] );
 Route::get('/internships/{id}',[InternshipController::class, 'show'] );
 
 Route::get('/internships/{id}/edit', [ InternshipController::class, 'edit' ]);
+Route::put('/internships/{id}', [ InternshipController::class, 'update' ]);
 
 
 
